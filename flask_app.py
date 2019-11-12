@@ -52,5 +52,5 @@ def index():
     return render_template('index.html', list2=list2,plusurl=plusurl) 
 
 
-if __name__=='__main__' :
+#if __name__=='__main__' :
     #app.run(debug=True)   
