@@ -33,7 +33,7 @@ def index():
         my_price = soup.find_all(class_="cafe_item_price")
   
         for title in my_price:
-            numbers = re.findall("\d+",title.text.replace(',',''))
+            numbers = re.findall(r"\d+",title.text.replace(',',''))
             index=[]
             new_numbers=np.delete(numbers, index)
             real_numbers=int(new_numbers)
